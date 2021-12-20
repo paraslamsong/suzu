@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+   background-color: #191A2B;
+   color: #fff;
+   font-family: SF Pro Display;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+#navbar {
+    background-color: #191A2B;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    position: fixed; /* Set the navbar to fixed position */
+  top: 0; 
+  width: 100%;
+  }
+  #nav-right{
+      float: right;
+      display: block;
+  }
+  .grident-text{
+    background: linear-gradient(to right, #FFEAA9, #FFAFB4, #C471ED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #intro-box{
+      margin-top: 140px;
+      text-align: center;
+  }
+  .intro-text{
+      font-size: 28px;
+      font-weight: 600;
+  }
+  .intro-gradient{
+    background: linear-gradient(45deg, #C471ED, #FFAFB4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .intro-line{
+    margin-top: 40px;
+      color: #767B96;
+      padding-left: 20%;
+      padding-right: 20%;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    font-family: "SF Pro Text";
+    color: #C2C5D7;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+
+  .hire-btn{
+      align-self: center;
+      padding: 10px;
+      border-radius: 12px ;
+    background: linear-gradient(to right, #FFA974 , #FF7285 39.76%, #C750C3 120.48%);
+    border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor:pointer;
+    /* background-color: #4CAF50; */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+  }
+
+  .social-btn{
+      margin-left: 25px;
+      margin-right: 25px;
+  }
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  [class*="aboutinfo"] {
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .aboutinfo{
+      text-align: left;
+      padding-left: 3rem;
+    }
+
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+
+  .aboutinfo{
+    text-align: left;
+    padding-left: 3rem;
+}
+  }
+
+  .about-text{
+      font-size: 38px;
+      font-weight: 600;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+  .about-gradient{
+    background: linear-gradient(45deg, #904967, #FD588E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text{
+      font-size: 18px;
+      color: #767B96;
+  }
+
+  .padding-horizonal{
+      padding-left: 3rem;
+      padding-right: 3rem;
+  }
+
+  .resume-btn{
+      margin-top: 30px;
+    background-image:  linear-gradient(#C750C3, #FF7285);
+    /* border-width: 2px; */
+    padding: 14px 26px;
+    border-radius: 12px;
+    color: #fff;
+    /* border: none; */
+    cursor: pointer;
+    border: solid 3px transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    box-shadow: 2px 1000px 1px #191A2B inset;
+}
