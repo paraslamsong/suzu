@@ -18,6 +18,7 @@ body {
 .row {
   display: flex;
   flex-direction: row;
+  flex: 1;
 }
 
 #navbar {
@@ -107,6 +108,10 @@ body {
   padding-left: 0px;
   text-align: left;
   padding-left: 2rem;
+}
+
+.col-6 {
+  width: 50%;
 }
 
 /* For mobile phones: */
@@ -417,7 +422,7 @@ body {
 
 .work-text {
   font-weight: 600;
-  font-size: 38px;
+  font-size: 24px;
   line-height: 140%;
   /* or 53px */
 
@@ -436,4 +441,106 @@ body {
 .work-group {
   margin-top: 75px;
   margin-bottom: 75px;
+  align-items: center;
+}
+
+.work-margin-bottom {
+  margin-bottom: 20px;
+}
+
+#contactme {
+  margin-top: 150px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-box {
+  /* Dark/600 */
+  align-self: center;
+
+  background: #202235;
+  max-width: 700px;
+  /* Dark/500 */
+
+  border: 1px solid #2A2E44;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 67px #1A1927;
+  border-radius: 20px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 15px;
+  background: rgba(25, 26, 43, 0.8);
+  /* Dark/500 */
+  border: 1px solid #2A2E44;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #C2C5D7;
+  height: 48px;
+  width: 100%;
+}
+
+label {
+  text-align: left;
+  width: 100px;
+  margin-left: 0px;
+  align-self: flex-start;
+  padding-bottom: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  letter-spacing: -0.02em;
+
+  /* Text/Default */
+
+  color: #9DA0B6;
+}
+
+.getintouch-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  /* or 38px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #FFFFFF;
+}
+
+.getintouch-body {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  /* or 29px */
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  /* Dark/200 */
+
+  color: #767B96;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+}
+
+.footer {
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+
+  letter-spacing: -0.02em;
+
+  /* Dark/200 */
+
+  color: #767B96;
+  width: 100%;
+
 }
