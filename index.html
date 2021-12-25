@@ -4,6 +4,7 @@
     <head>
         <title>Suzata Khadka</title>
         <link rel="icon" href="assets/icon.png" type="image/icon type">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +15,11 @@
         <meta property="og:image:height" content="200">
     </head>
 
-    <body>
-        <div id="navbar">
+    <body class="vectorImage">
+        <div id="my-navbar">
             <img src="assets/logo.png" alt="Suzu logo" height="24">
-            <div id="nav-right">
-                <a href="#aboutme">About me</a>
+            <div class="d-none d-sm-none d-md-block" id="nav-right">
+                <a href="#aboutme" >About me</a>
                 <a href="#services">Services</a>
                 <a href="#works">Work</a>
                 <a href="#contactme"><span class="grident-text">Contact me</span>
@@ -46,35 +47,40 @@
                         href="https://www.facebook.com/suzyan.khadka"
                         target="_blank"> <img
                             src="assets/facebook.png" alt="Suzu logo"
-                            height="24"> </a>
+                            height="28"> </a>
                     <a class="social-btn"
                         href="https://www.instagram.com/studioz_illustra/"
                         target="_blank"> <img
-                            src="assets/instra.png" alt="Suzu logo" height="24">
+                            src="assets/instra.png" alt="Suzu logo" height="28">
                     </a>
                     <a class="social-btn" href="https://dribbble.com/suza"
                         target="_blank"> <img src="assets/dripple.png"
-                            alt="Suzu logo" height="24"> </a>
+                            alt="Suzu logo" height="28"> </a>
                     <a class="social-btn"
                         href="https://www.facebook.com/suzyan.khadka"
                         target="_blank"> <img
                             src="assets/linkedin.png" alt="Suzu logo"
-                            height="24"> </a>
+                            height="28"> </a>
                 </div>
             </div>
 
             <div class="row" id="aboutme">
-                <div class="col-md-5 col-lg-4 col-s-12">
+                <div class="col-md-6 col-lg-5 col-sm-12">
                     <div class="photo-frame">
                         <img src="assets/suzu.png" alt="Suzu logo" width="100%">
                     </div>
                 </div>
 
-                <div class="col-md-7 col-lg-8 col-s-12 aboutinfo">
-                    <img src="assets/abouticon.png" alt="about icon" width="60"
-                        />
-                    <div class="about-gradient about-text">About me</div>
-                    <div class="text">I am a designer i work with ideas,
+                <div class="col-md-6 col-lg-7 col-sm-12">
+                    <div class="d-md-none d-block " style="height: 30px;"></div>
+                    <div  class="d-flex justify-content-center justify-content-sm-center  justify-content-md-start" >
+
+                        <img  src="assets/abouticon.png" alt="about icon" width="60" />
+                    </div>
+                    <div  class="d-flex justify-content-center justify-content-sm-center   justify-content-md-start" >
+                        <div class="about-gradient about-text">About me</div>
+                    </div>
+                    <div class="text text-align-sm-center">I am a designer i work with ideas,
                         metaphors, symbols. I have almost 2 years of
                         experience in UI/UX Design with special expertise in
                         website design, mobile app design, brand
@@ -83,15 +89,19 @@
                         Proficient with Figma, Adobe XD, illustrator, Photoshop,
                         Excel, Ms word etc.
                     </div>
+
+                    <div  class="d-flex justify-content-center justify-content-sm-center  justify-content-md-start" >
+
                     <button onClick="" class="resume-btn">Resume</button>
+                    </div>
 
                 </div>
             </div>
 
             <div id="services">
                 <div class="row">
-                    <div class="col-lg-6 col-s-12 about-gradient about-text">Services</div>
-                    <div class="col-lg-6 col-s-12 serviceinfo text-center">
+                    <div class="col-lg-6 col-sm-12 col-md-12 about-gradient about-text text-sm-center">Services</div>
+                    <div class="col-lg-6 col-sm-12 col-md-12 serviceinfo text-center d-none d-lg-block">
                         <div style="width: 400px; float: center; text-align:
                             left;">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -106,22 +116,22 @@
                     center; margin-top: 30px; margin-bottom: 100px;">
                     <div class="card-service">
                         <div class="card-iconbox">
-                            <img src="assets/edit.png" alt="Graphic Design"
+                            <img  src="assets/edit.png" alt="Graphic Design"
                                 width="24" style="align-self: center;" />
                         </div>
                         <div class="card-title">Graphic Design</div>
-                        <div class="card-body">Making design of social media
+                        <div class="card-body-text">Making design of social media
                             post, flyer design, brochure design, branding etc.</div>
                     </div>
 
 
                     <div class="card-service">
                         <div class="card-iconbox">
-                            <img src="assets/display.png" alt="Web UI Design"
+                            <img  src="assets/display.png" alt="Web UI Design"
                                 width="24" style="align-self: center;" />
                         </div>
                         <div class="card-title">Web UI Design</div>
-                        <div class="card-body">Making creative website user
+                        <div class="card-body-text">Making creative website user
                             interface with including related design system like
                             Typography, colors, layout </div>
                     </div>
@@ -133,7 +143,7 @@
                                 width="24" style="align-self: center;" />
                         </div>
                         <div class="card-title">Mobile App Design</div>
-                        <div class="card-body">I'll design an entire app from
+                        <div class="card-body-text">I'll design an entire app from
                             scratch, entire mobile version and I'll create a
                             design system that will bring everything together.</div>
                     </div>
@@ -146,83 +156,78 @@
                 <div class="about-gradient about-text text-center"
                     style="align-self: center;">Let’s Check My Recent Work</div>
                 <div>
-                    <div class="row work-group">
-
-                        <div class="col-md-6 col-lg-6 col-s-12 work-text">
-                            <span class="about-gradient">Time Tracko</span>
-                            (Workforce Analytics and Productivity Software)<br><br>
-                            <a href="https://timetracko.com/" target="_blank">
-                                <button onClick=""
-                                    class="hire-btn">
-                                    Go to site
-                                </button>
-                            </a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-6 col-s-12">
+                    <div class="row flex-lg-row-reverse flex-row flex-md-row-reverse  d-flex align-items-center">
+                        <div class="float-lg-right float-md-right col-md-6 col-lg-6 col-sm-12">
                             <div class="photo-frame">
                                 <img src="assets/timetracko.png" alt="Suzu
                                     logo" width="100%">
                             </div>
                         </div>
-
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 col-12  text-lg-start text-sm-center text-lg-left text-md-left text-center work-box">
+                            <span class="about-gradient">Time Tracko</span>
+                            (Workforce Analytics and Productivity Software)<br><br>
+                            <a href="https://timetracko.com/" target="_blank">
+                                <button onClick=""
+                                    class="hire-btn">
+                                    Visit site
+                                </button>
+                            </a>
+                        </div>
                     </div>
                     <div class="row work-group">
-                        <div class="col-md-6 col-lg-6 col-s-12">
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-12">
                             <div class="photo-frame">
                                 <img src="assets/mobilespy.png" alt="Suzu
                                     logo" width="100%">
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-6 col-s-12 work-text
-                            padding-horizonal">
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-12 col-xs-12  text-lg-start text-sm-center text-lg-left text-md-left text-center work-box">
                             <div style="justify-content: center;">
                                 <span class="about-gradient">Mobile Spy
                                 </span>(The ultimate mobile spying app)<br><br>
                                 <a href="https://mobilespy.io/"
                                     target="_blank">
                                     <button onClick="" class="hire-btn">
-                                        Go to site
+                                        Visit site
                                     </button>
                                 </a>
                             </div>
                         </div>
 
                     </div>
-                    <div class="row work-group">
+                    <div class="row flex-lg-row-reverse flex-row flex-md-row-reverse  d-flex align-items-center">
 
-                        <div class="col-md-6 col-lg-6 col-s-12 work-text">
-                            <span class="about-gradient">Exam Pirate</span>
-                            (Ace your next Certification Exam with Free
-                            Practice Exams)<br><br>
-
-                            <a href="https://exampirate.com/" target="_blank">
-                                <button onClick="" class="hire-btn">
-                                    Go to site
-                                </button>
-                            </a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-6 col-s-12">
+                        <div class="float-lg-right float-md-right col-md-6 col-lg-6 col-sm-12">
                             <div class="photo-frame">
                                 <img src="assets/exampirate.png" alt="Suzu
                                     logo" width="100%">
                             </div>
                         </div>
 
+
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 col-12  text-lg-start text-sm-center text-lg-left text-md-left text-center work-box">
+                            <span class="about-gradient">Exam Pirate</span>
+                            (Ace your next Certification Exam with Free
+                            Practice Exams)<br><br>
+
+                            <a href="https://exampirate.com/" target="_blank">
+                                <button onClick="" class="hire-btn">
+                                    Visit site
+                                </button>
+                            </a>
+                        </div>
+
                     </div>
                     <div class="row work-group">
-                        <div class="col-md-6 col-lg-6 col-s-12">
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-12">
                             <div class="photo-frame">
                                 <img src="assets/kripsecall.png" alt="Suzu
                                     logo" width="100%">
                             </div>
                         </div>
-
-                        <div class="col-md-6 col-lg-6 col-s-12 work-text
-                            padding-horizonal">
-                            <div style="justify-content: center;">
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-12 col-xs-12  text-lg-start text-sm-center text-lg-left text-md-left text-center work-box">
+                  
                                 <span class="about-gradient">Krispcall</span>
                                 (Virtual Cloud Phone System
                                 for your Business)<br><br>
@@ -230,56 +235,88 @@
                                 <a href="https://krispcall.com/"
                                     target="_blank">
                                     <button onClick="" class="hire-btn">
-                                        Go to site
+                                        Visit site
                                     </button>
                                 </a>
-                            </div>
                         </div>
 
                     </div>
                 </div>
             </div>
 
-            <div id="contactme">
-                <div class ="getintouch-text"> 
-                     Get in Touch
-                </div>
+           
 
-                <div class ="getintouch-body"> 
-                    My service personnel are always ready to answer any of your enquiries. Reach us<br>using the contact form below.
-                </div>
-                <div class="contact-box">
+        </div>
+        <div id="contactme">
+            <div class ="getintouch-text"> 
+                 Get in Touch
+            </div>
 
-                    <form style=" padding: 34px; text-align: left; margin: auto;">
-                        <div class="row">
-                            <div class="col-6" style="padding-right: 11px;">
-                                <label for="fname">Full name</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                            </div>
-                            <div class="col-6"  style="padding-left: 11px;">
-                                <label for="lname">Email address</label><br>
-                                <input type="text" id="lname" name="lname">
-                            </div>
+            <div class ="getintouch-body"> 
+                My service personnel are always ready to answer any of your enquiries. Reach us<br>using the contact form below.
+            </div>
+            <div class="contact-box">
 
+                <form style=" padding: 34px; text-align: left; margin: auto;">
+                    <div class="row">
+                        <div class="col-md-6" style="margin-top: 24px;">
+                            <label for="fname">Full name</label><br>
+                            <input type="text" id="name" name="name"><br>
                         </div>
-                        <div style="height:24px;" ></div>
-                        <label for="lname">Subject</label><br>
-                        <input type="text" id="lname" name="lname" value="Need website design.">
-                        <div style="height:24px;" ></div>
-                        <label for="lname">Subject</label><br>
-                        <textarea type="text" col="10" height="500" id="lname" name="lname" value="Need website design."  style="height: 120px" ></textarea>
 
-                        <div style="height:36px;" ></div>
-                          <input class="hire-btn" type = "submit" value = "Send message" />
-                    </form>
-                </div>
-                <div class="footer">
-                    Address: Kathmandu, Nepal<div style="width: 33px"></div> Contact: 9860937247<div style="width: 33px"></div>Email: sujatakhadka69@.com
-                </div>
+                        <div class="col-md-6" style="margin-top: 24px;">
+                            <label for="lname">Email address</label><br>
+                            <input type="email" id="email" name="email">
+                        </div>
 
+                    </div>
+                    <div style="height:24px;" ></div>
+                    <label for="lname">Subject</label><br>
+                    <input type="text" id="subject" name="subject" value="Need website design.">
+                    <div style="height:24px;" ></div>
+                    <label for="lname">Subject</label><br>
+                    <textarea type="text" col="10" height="500" id="message" name="message" value="Need website design."  style="height: 120px" ></textarea>
+                    <div style="height:36px;" ></div>
+                      <input class="hire-btn" type = "submit" value = "Send message" />
+                </form>
+            </div>
+            <div class="row footer">
+                Address: Kathmandu, Nepal 
+                <br class="d-block d-md-none footer-padding">  
+                <span class="d-none d-md-block footer-padding"></span>
+                Contact: 9860937247 
+                <br class="d-block d-md-none"> 
+                <span class="d-none d-md-block footer-padding"></span> 
+                Email: sujatakhadka69@.com
             </div>
 
         </div>
     </body>
+
+    <script>
+        var scrollpos = window.scrollY;
+        var header = document.getElementById("my-navbar");
+        
+        function add_class_on_scroll() {
+            
+            header.classList.add("scrolled");
+        }
+        
+        function remove_class_on_scroll() {
+            header.classList.remove("scrolled");
+        }
+        
+        window.addEventListener('scroll', function(){ 
+
+            scrollpos = window.scrollY;
+            console.log(scrollpos);
+            if(scrollpos > 220){
+                add_class_on_scroll();
+            }
+            else {
+                remove_class_on_scroll();
+            }
+        });
+    </script>
 
 </html>
