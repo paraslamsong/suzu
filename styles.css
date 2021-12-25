@@ -102,7 +102,7 @@ body.vectorImage {
 }
 
 /* Navbar links */
-#my-navbar a {
+#my-navbar>#nav-right>a {
   font-family: "SF Pro Text";
   color: #C2C5D7;
   text-align: center;
