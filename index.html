@@ -15,19 +15,38 @@
         <meta property="og:image:height" content="200">
     </head>
 
-    <body class="vectorImage">
-        <div id="my-navbar">
+    <body class="vectorImage pink">
+        <div  class="d-none d-sm-block"id="my-navbar">
             <a href="#" >
                 <img src="assets/logo.png" alt="Suzu logo" height="24">
             </a>
 
-            <div class="d-none d-sm-none d-md-block" id="nav-right">
+            <div class="" id="nav-right">
                 <a href="#aboutme" >About me</a>
                 <a href="#services">Services</a>
                 <a href="#works">Work</a>
                 <a href="#contactme"><span class="grident-text">Contact me</span>
                     👋🏻</a>
             </div>
+
+        </div>
+
+        <div  class="d-block d-sm-none topnav"id="collapse-navbar">
+            <img src="assets/logo.png" alt="Suzu logo" height="24">
+
+            <div class="float-right hamcontainer" href="javascript:void(0);" onclick="navbar()">
+                <div class="" id="ham-btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                </div>
+            <a href="#aboutme" >About me</a>
+            <a href="#services">Services</a>
+            <a href="#works">Work</a>
+            <a href="#contactme"><span class="grident-text">Contact me</span>
+                👋🏻</a>
+
         </div>
         <div id="intro-box">
             <div style="margin-bottom:14px;">Hello 👋🏻</div>
@@ -275,10 +294,10 @@
                     </div>
                     <div style="height:24px;" ></div>
                     <label for="lname">Subject</label><br>
-                    <input type="text" id="subject" name="subject" value="Need website design.">
+                    <input type="text" id="subject" name="subject" >
                     <div style="height:24px;" ></div>
-                    <label for="lname">Subject</label><br>
-                    <textarea type="text" col="10" height="500" id="message" name="message" value="Need website design."  style="height: 120px" ></textarea>
+                    <label for="lname">Message</label><br>
+                    <textarea type="text" col="10" height="500" id="message" name="message" style="height: 120px" ></textarea>
                     <div style="height:36px;" ></div>
                       <input class="hire-btn" type = "submit" value = "Send message" />
                 </form>
@@ -299,27 +318,45 @@
     <script>
         var scrollpos = window.scrollY;
         var header = document.getElementById("my-navbar");
+        var header2 = document.getElementById("collapse-navbar");
         
         function add_class_on_scroll() {
             
             header.classList.add("scrolled");
+            header2.classList.add("scrolled");
         }
         
         function remove_class_on_scroll() {
             header.classList.remove("scrolled");
+            header2.classList.remove("scrolled");
         }
         
         window.addEventListener('scroll', function(){ 
 
             scrollpos = window.scrollY;
             console.log(scrollpos);
-            if(scrollpos > 220){
+            if(scrollpos > 80){
                 add_class_on_scroll();
             }
             else {
                 remove_class_on_scroll();
             }
         });
+
+
+        function navbar() {
+            var x = document.getElementById("collapse-navbar");
+            var ham = document.getElementById("ham-btn");
+            if (x.className === "d-block d-md-none topnav") {
+            x.className += " responsive scrolled" ;
+            ham.classList.className+=" change";
+            } else {
+            x.className = "d-block d-md-none topnav";
+            ham.classList.className -= " change";
+            }
+        }
+
+  </script>
     </script>
 
 </html>
