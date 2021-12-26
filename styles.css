@@ -21,7 +21,7 @@ body.vectorImage {
   background-image: url('backgroundVector.svg'), url("footerbg.svg"), url('noise.svg');
   background-position: left top, left bottom, left top;
   background-repeat: no-repeat, no-repeat, repeat;
-  background-size: contain, contain, contain;
+  background-size: contain, 100%, contain;
 
 
 
@@ -566,8 +566,8 @@ label {
 
 
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-4px, 3px);
+  transform: rotate(-45deg) translate(-4px, 3px);
 }
 
 .change .bar2 {
@@ -575,6 +575,6 @@ label {
 }
 
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-4px, -4px);
+  transform: rotate(45deg) translate(-4px, -4px);
 }

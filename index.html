@@ -347,12 +347,14 @@
         function navbar() {
             var x = document.getElementById("collapse-navbar");
             var ham = document.getElementById("ham-btn");
-            if (x.className === "d-block d-md-none topnav") {
-            x.className += " responsive scrolled" ;
-            ham.classList.className+=" change";
+            if (!x.classList.contains("responsive")) {
+                x.classList.add( "responsive") ;
+                x.classList.add( "scrolled") ;
+                ham.classList.add("change");
             } else {
-            x.className = "d-block d-md-none topnav";
-            ham.classList.className -= " change";
+                x.classList.remove( "responsive") ;
+                x.classList.remove( "scrolled") ;
+            ham.classList.remove("change");
             }
         }
 
