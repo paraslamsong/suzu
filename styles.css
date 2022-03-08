@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 1.26rem;
 }
 
 #aboutme, #services, #works, #contactme {
@@ -216,7 +217,7 @@ body.vectorImage {
 }
 
 .about-text {
-  font-size: 38px;
+  font-size: 3rem;
   font-weight: 600;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -253,6 +254,12 @@ body.vectorImage {
   background-clip: content-box, border-box;
 
   box-shadow: 2px 1000px 1px #191A2B inset;
+}
+
+.resume-btn:hover {
+  text-decoration: none !important;
+
+  color: #fff !important;
 }
 
 .photo-frame {

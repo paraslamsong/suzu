@@ -114,7 +114,7 @@
 
                     <div  class="d-flex justify-content-center justify-content-sm-center  justify-content-md-start" >
 
-                    <button onClick="" class="resume-btn">Resume</button>
+                    <a href="assets/Resume.pdf"  class="resume-btn" target="_blank">Resume</a>
                     </div>
 
                 </div>
@@ -299,7 +299,7 @@
                     <label for="lname">Message</label><br>
                     <textarea type="text" col="10" height="500" id="message" name="message" style="height: 120px" ></textarea>
                     <div style="height:36px;" ></div>
-                      <input class="hire-btn" type = "submit" value = "Send message" />
+                      <input class="hire-btn" type="submit" onClick="sendEmail()"  value = "Send message" />
                 </form>
             </div>
             <div class="row footer">
@@ -342,8 +342,6 @@
                 remove_class_on_scroll();
             }
         });
-
-
         function navbar() {
             var x = document.getElementById("collapse-navbar");
             var ham = document.getElementById("ham-btn");
@@ -356,6 +354,15 @@
                 x.classList.remove( "scrolled") ;
             ham.classList.remove("change");
             }
+        }
+
+        sendEmail() {
+            alert("hello");
+            var email = document.getElementById("email");
+            var name = document.getElementById("name");
+            var subject = document.getElementById("subject");
+            var message = document.getElementById("message");
+            document.location = "mailto:sujatakhadka69@.com?subject="+subject+"&body="+messgae+" from "+email +" \n "+name;
         }
 
   </script>
